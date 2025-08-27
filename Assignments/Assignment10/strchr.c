@@ -6,10 +6,7 @@ void main(){
 	char str[]= "Hello, World!!!";
 	
 	//finding 1st occ of 'o'
-	char *res = strchr(str,'o');
-	if(res!=NULL)
-	 	printf("Character found at: %ld index",res-str);
+		if(res!=NULL)
 	else
 		printf("Character not found");
-	
-}
+	++;                          
