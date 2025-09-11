@@ -2,8 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define INIT_CAPACITY 2
-
 typedef struct Book {
 	int id;
 	char name[50];
@@ -25,9 +23,8 @@ void displaySortedBooks(Book*, int);
 
 void main() {
 	//Book Management System
-	Book *books = (Book*) malloc(INIT_CAPACITY * sizeof(Book));
-	int capacity = INIT_CAPACITY;
-	
+	int capacity = 100;
+	Book *books = (Book*) malloc(capacity * sizeof(Book));
 	//Book books[100];
 	int count = 0;
 
